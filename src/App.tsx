@@ -1,7 +1,9 @@
+import { Register } from "./components/Register";
+
 function App() {
   return (
     <>
-      <h1>React Study!</h1>
+      <Register />
     </>
   );
 }
