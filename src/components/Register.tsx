@@ -10,6 +10,11 @@ import { ChangeEventHandler, FormEvent, useState } from "react";
  * - 자기소개
  */
 
+/**
+ * useRef
+ * Reference 객체를 생성
+ * re-rendering을 유발하지않음F
+ */
 const RegisterForm = styled.form`
   display: flex;
   flex-direction: column;
