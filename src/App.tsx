@@ -1,9 +1,9 @@
-import UseEffectStudy from "./components/HookEffect";
+import TodoList from "./pages/practice1";
 
 function App() {
   return (
     <>
-      <UseEffectStudy />
+      <TodoList />
     </>
   );
 }
