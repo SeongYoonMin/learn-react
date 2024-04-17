@@ -1,10 +1,9 @@
-import HookExam from "./components/HookExam";
-
+import UseEffectStudy from "./components/HookEffect";
 
 function App() {
   return (
     <>
-      <HookExam />
+      <UseEffectStudy />
     </>
   );
 }
