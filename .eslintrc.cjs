@@ -24,10 +24,11 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "react"],
+  plugins: ["@typescript-eslint", "react", "@emotion"],
   rules: {
     "no-unused-vars": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "@emotion/jsx-import": "error"
   },
 };
