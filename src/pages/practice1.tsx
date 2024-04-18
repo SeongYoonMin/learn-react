@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from "react";
-
+import styled from "@emotion/styled";
 /**
  * TITLE: TodoList
  * 기능구현: {
@@ -13,30 +14,32 @@ import React from "react";
  */
 
 export default function TodoList() {
-  const mainDesign: React.CSSProperties = {
-    width: "50vw",
-    height: "80vh",
-    backgroundColor: "#F5F5F5",
-    margin: "40px auto",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "start",
-    flexDirection: "column",
-    gap: "40px",
-    border: "1px solid #F0F0F0",
-    borderRadius: "8px",
-    boxSizing: "border-box",
-    padding: "8px 4px",
-  };
-  const headerOneDesign: React.CSSProperties = {
-    textAlign: "center",
-    fontSize: "40px",
-    fontWeight: "500",
-    padding: "20px 0",
-  };
+  const Todo = styled.main`
+    width: "50vw";
+    height: "80vh";
+    background-color: "#F5F5F5";
+    margin: "40px auto";
+    display: "flex";
+    align-items: "center";
+    justify-content: "start";
+    flex-direction: "column";
+    gap: "40px";
+    border: "1px solid #F0F0F0";
+    border-radius: "8px";
+    box-sizing: "border-box";
+    padding: "8px 4px";
+  `;
+  const TodoHeader = styled.h1`
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 20px 0;
+  `
   return (
-    <main style={mainDesign}>
-      <h1 style={headerOneDesign}>To Do</h1>
-    </main>
+    
+    <Todo>
+        <TodoHeader>To Do</TodoHeader>
+    </Todo>
+    
   );
 }
