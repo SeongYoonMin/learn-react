@@ -1,9 +1,9 @@
-import TodoList from "./pages/practice1";
+import MainProjectOne from "./pages/miniproject1";
 
 function App() {
   return (
     <>
-      <TodoList />
+      <MainProjectOne />
     </>
   );
 }
